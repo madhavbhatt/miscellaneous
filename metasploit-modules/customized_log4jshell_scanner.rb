@@ -145,7 +145,7 @@ class MetasploitModule < Msf::Auxiliary
         postvars['vars_get'] = param_dict
         res = send_request_cgi(postreq.merge(postvars))
       else
-        vprint_status("Only HTTP Get and Post methods are allowed")
+        print_bad("Only HTTP Get and Post methods are allowed")
       end
 
       return unless res
