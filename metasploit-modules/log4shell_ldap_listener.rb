@@ -1,5 +1,9 @@
 ##
 # This module requires Metasploit: https://metasploit.com/download
+#
+# When you run this module, it will generate a payload that you can send manually to the application.
+# If the application is vulnerable, it will make a callback to this listener. 
+#
 ##
 
 class MetasploitModule < Msf::Auxiliary
